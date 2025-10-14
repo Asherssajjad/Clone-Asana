@@ -1,0 +1,221 @@
+/* --- Header --- */
+header {
+  width: 100%;
+  height: 55px;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+/* --- Left: Logo + Hamburger --- */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-icon {
+  font-size: 22px;
+  color: #fff; /* white */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-icon:hover {
+  color: #00bcd4;
+}
+
+.logo {
+  height: 20px;
+  cursor: pointer;
+    padding-left: 10px;
+}
+
+/* --- Middle: Search Bar --- */
+.search-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  background-color: #565557;
+  display: flex;
+  align-items: center;
+  border-radius: 18px; /* slightly more rounded */
+  padding: 4px 10px;
+  width: 50%;
+  transition: all 0.3s ease;
+}
+
+.search-box .icon {
+  color: #fff; /* white search icon */
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+/* --- Compact Shortcut Badge --- */
+.shortcut {
+  background-color: #333;
+  color: #ccc;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-left: 8px;
+  user-select: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+/* --- Right: Shortcut Info + Profile --- */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 30px;
+}
+
+.shortcut-info {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.profile-icon:hover {
+  background-color: #00bcd4;
+}
+
+.profile-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .search-box {
+    width: 70%;
+  }
+  .shortcut-info {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-box {
+    width: 100%;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+
+ .sidebar-section {
+        height: 100vh;
+        width: 60px;
+        background-color: #1e1e1e;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        transition: width 0.3s ease;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .sidebar-section.open {
+        width: 250px;
+        align-items: flex-start;
+      }
+
+      .menu-icon {
+        font-size: 24px;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 20px 10px;
+        align-self: center;
+        transition: transform 0.3s ease;
+      }
+
+      .sidebar-section.open .menu-icon {
+        align-self: flex-end;
+        margin-right: 10px;
+      }
+
+      .menu-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .menu-items a {
+        padding: 12px 20px;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .menu-items a:hover {
+        background-color: #575757;
+      }
+
+      .menu-items .label {
+        display: none;
+      }
+
+      .sidebar-section.open .menu-items .label {
+        display: inline;
+      }
+
+      .menu-items i {
+        min-width: 20px;
+        text-align: center;
+      }
+    
