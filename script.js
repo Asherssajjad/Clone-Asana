@@ -3,3 +3,22 @@
     menuToggle.addEventListener("click", () => {
         sideBar.classList.toggle("open");
     });
+
+    
+    const btn = document.getElementById("home");
+    const section = document.getElementById("section-1");
+    btn.addEventListener("click", () => {
+        section.classList.remove("section-1");
+        section.classList.toggle("section-2");
+    })
+
+    const content = document.querySelectorAll(".label");
+    content.forEach(cont => {
+        content.addEventListener("click", function(){
+            content.forEach(btn => btn.classList.remove("active"))
+            this.classList.add("untive")
+        })
+        
+    });
+
+
