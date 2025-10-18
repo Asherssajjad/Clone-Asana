@@ -22,3 +22,19 @@
     });
 
 
+
+
+     function showSection(id) {
+      // Hide all sections
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+
+      // Show selected section
+      document.getElementById(id).classList.add('active');
+
+      // Update header title
+      document.getElementById('pageTitle').textContent = id.charAt(0).toUpperCase() + id.slice(1);
+
+      // Highlight active menu
+      document.querySelectorAll('.sidebar li').forEach(li => li.classList.remove('active'));
+      event.target.classList.add('active');
+    }
