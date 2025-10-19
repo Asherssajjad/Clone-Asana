@@ -82,8 +82,31 @@
     <!-- Main content section -->
     <section class="main-content">
       <section id="home-content" class="content-section activeSection">
-        <h4 id="date"></h4>
-        <h2>Good evening, Asher</h2>
+        <div class="home-info">
+          <!-- First inner div: Date and Greeting -->
+          <div class="date-greeting">
+            <h4 id="date"></h4>
+            <p>Good evening, Asher</p>
+          </div>
+
+          <!-- Second inner div: Week selector, Task stats, and Customize button -->
+          <div class="task-info">
+            <div class="task-header">
+              <select class="week-month-select">
+                <option>My week</option>
+                <option>My month</option>
+              </select>
+              <span class="task-statistics">
+                <span class="tasks-completed">0 tasks completed</span>
+                <span class="collaborators">0 collaborators</span>
+              </span>
+              <button class="customize-button">Customize</button>
+            </div>
+            <div class="icons">
+              <!-- You can add icon images here or use icon libraries like Font Awesome -->
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="about-content" class="content-section">

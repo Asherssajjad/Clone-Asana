@@ -253,3 +253,51 @@ header {
   background-color: #1abc9c;
   color: white;
 }
+ .home-info {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .date-greeting p {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .task-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .week-month-select {
+    margin-right: 15px;
+  }
+
+  .task-statistics span {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+
+  .customize-button {
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .icons {
+    /* Placeholder for any icons you want to include */
+  }
+  #date{
+   margin: 10px 0px;
+  }
