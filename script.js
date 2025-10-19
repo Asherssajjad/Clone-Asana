@@ -36,3 +36,10 @@ linking.forEach(link => {
     }
   });
 });
+
+
+const date = new Date();
+const options = { weekday: "long", month: "long", day: "numeric" };
+const formatted = date.toLocaleDateString("en-US", options);
+document.getElementById("date").textContent = formatted;
+
