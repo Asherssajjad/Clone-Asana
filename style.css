@@ -242,11 +242,14 @@ header {
   margin-left: 250px;
   width: calc(100% - 250px);
 }
- 
-
-.section-2{
+.content-section {
   display: none;
 }
-.section-1{
-display: block;
+.content-section.activeSection {
+  display: block;
+}
+
+.menu-items a.active {
+  background-color: #1abc9c;
+  color: white;
 }

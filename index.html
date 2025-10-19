@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Asana</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-  <link rel="stylesheet" href="style.css" />
   <body>
     <!-- Header Section -->
     <header>
@@ -41,29 +41,72 @@
       </div>
     </header>
 
-    <!-- The side bar code -->
-
+    <!-- Sidebar Section -->
     <section class="sidebar-section" id="sidebarSection">
       <div class="menu-items">
-        <a href="#" id="home"
-          ><i class="fas fa-home"></i><span class="label">Home</span></a
+        <a
+          href="#"
+          class="sidebar-link"
+          data-section="home-content"
+          id="home-link"
         >
-        <a href="#"
-          ><i class="fas fa-user"></i><span class="label">About</span></a
+          <i class="fas fa-home"></i><span class="label">Home</span>
+        </a>
+        <a
+          href="#"
+          class="sidebar-link"
+          data-section="about-content"
+          id="about-link"
         >
-        <a href="#"
-          ><i class="fas fa-cogs"></i><span class="label">Services</span></a
+          <i class="fas fa-user"></i><span class="label">About</span>
+        </a>
+        <a
+          href="#"
+          class="sidebar-link"
+          data-section="services-content"
+          id="services-link"
         >
-        <a href="#"
-          ><i class="fas fa-envelope"></i><span class="label">Contact</span></a
+          <i class="fas fa-cogs"></i><span class="label">Services</span>
+        </a>
+        <a
+          href="#"
+          class="sidebar-link"
+          data-section="contact-content"
+          id="contact-link"
         >
+          <i class="fas fa-envelope"></i><span class="label">Contact</span>
+        </a>
       </div>
     </section>
 
-    <!-- Main content code ` -->
+    <!-- Main content section -->
     <section class="main-content">
-      <div id="section-1" class="section-1">asbjkawjbd awjkdw ojawd</div>
+      <section id="home-content" class="content-section activeSection">
+        <h2>Home</h2>
+        <p>
+          Welcome to the Home section. This is the main landing page content.
+        </p>
+      </section>
+
+      <section id="about-content" class="content-section">
+        <h2>About</h2>
+        <p>
+          This is the About section. Here you can talk about your company or
+          yourself.
+        </p>
+      </section>
+
+      <section id="services-content" class="content-section">
+        <h2>Services</h2>
+        <p>Details about services offered go here.</p>
+      </section>
+
+      <section id="contact-content" class="content-section">
+        <h2>Contact</h2>
+        <p>Contact information and forms can be placed here.</p>
+      </section>
     </section>
+
     <script src="script.js"></script>
   </body>
 </html>
